@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: leonbets-parser
+logging:
+  level:
+    root: info
