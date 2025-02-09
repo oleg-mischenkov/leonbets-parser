@@ -10,8 +10,9 @@ leonbets.com without using a browser or any browser emulator.
 1.	Clone or download the project repository containing the Dockerfile, pom.xml, and src folder.
 2.	Open a terminal in the root directory of the project (where the Dockerfile is located).
 3.	Build the Docker image by running:
+ .
 
-    docker build -t leonbets-parser:0.1 .
+     docker build -t leonbets-parser:0.1 .
 
 ### Running the Container
 

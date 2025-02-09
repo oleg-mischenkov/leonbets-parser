@@ -1,4 +1,4 @@
-package com.mishchenkov.leonbets_parser.servive;
+package com.mishchenkov.leonbets_parser.service;
 
 import org.springframework.core.ParameterizedTypeReference;
 import reactor.core.publisher.Flux;

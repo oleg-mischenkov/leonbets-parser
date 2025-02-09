@@ -1,7 +1,7 @@
 package com.mishchenkov.leonbets_parser.parser;
 
 import com.mishchenkov.leonbets_parser.entity.*;
-import com.mishchenkov.leonbets_parser.servive.WebClientService;
+import com.mishchenkov.leonbets_parser.service.WebClientService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Component;
