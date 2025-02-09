@@ -1,6 +1,22 @@
 spring:
   application:
     name: leonbets-parser
+  parser:
+    main-url: https://leonbets.com
+    web-client:
+      # 2 * 1024 * 1024 = 2097152
+      max-json-size: 2097152
+    api:
+      top-leagues: /api-2/betline/sports?ctag=en-US&flags=urlv2
+      events: /api-2/betline/events/all?ctag=en-US&league_id=%d&hideClosed=true&flags=reg,urlv2,mm2,rrc,nodup
+      markets: /api-2/betline/event/all?ctag=en-US&eventId=%d&flags=reg,urlv2,mm2,rrc,nodup,smgv2,outv2
+    settings:
+      threads: 3
+      sports: Football,Tennis,Ice Hockey,Basketball
+  scheduler:
+    leonbets:
+      # 1000 * 60 * 10 (each 10 min)
+      fixed-delay: 600000
 logging:
   level:
     root: info
